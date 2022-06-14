@@ -1,0 +1,31 @@
+.header{
+  top: 0;
+  height: 4.5rem;
+  background: #FFF;//1a61ac;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 7rem;
+  color: red;//#FFC107;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: sticky;
+  z-index: 10000;
+}
+
+.brand-name{
+  display: flex;
+}
+
+.bg-title{
+  font-size: 2rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sm-title{
+  // writing-mode: vertical-lr;
+  font-size: .8rem;
+  display: inline;
+  font-weight: 600;
+}
