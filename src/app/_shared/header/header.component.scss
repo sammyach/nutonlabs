@@ -70,4 +70,80 @@ a{
 //   color: #fff;
 // }
 
+.toggle-btn{
+  display: none;
+}
 
+.hide{
+  display: none !important;
+}
+
+.show{
+  display: block;
+}
+
+@media (max-width: 786px){
+  .header{
+    padding: 1rem;
+  }
+  .toggle-btn{
+    display: inline-block;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .mb-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    text-transform: uppercase;
+    position: fixed; /* Sit on top of the page content */
+  // display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  }
+
+  .mb-menu ul{
+    list-style: none;
+    color: #FFF;
+  }
+
+  .mb-menu ul li{
+    display: block;
+    color: #FFF;
+    text-align: center;
+    border-bottom: 1px #fff solid;
+  }
+
+  .mb-menu ul li a{
+    color: #FFF;
+
+  }
+
+  .close-btn{
+    text-align: right;
+    padding: 2rem;
+  }
+
+  .close-btn .fa{
+    color: #FFF;
+    font-size: 3rem;
+  }
+
+  .bg-title{
+    font-size: 1.5rem;
+  }
+
+  .sm-title{
+    font-size: .7rem;
+  }
+}

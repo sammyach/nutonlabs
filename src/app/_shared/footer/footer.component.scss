@@ -52,3 +52,20 @@ li:hover{
   color: rgb(92, 5, 5);
   cursor: pointer;
 }
+
+@media (max-width: 786px){
+  footer{
+    flex-direction: column;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  .ft-child{
+    margin-bottom: 2rem;
+  }
+
+  ul{
+    padding-top: 1rem;
+  }
+}

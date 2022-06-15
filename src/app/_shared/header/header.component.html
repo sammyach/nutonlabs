@@ -5,12 +5,24 @@
     </div>
   </a>
 
+  <div (click)="toggle()" class="toggle-btn"><i class="fa fa-bars" aria-hidden="true"></i></div>
   <nav class="menu">
+
     <ul>
       <li><a href="#about">About</a> </li>
       <li><a href="#services">services</a> </li>
       <li><a href="#projects">projects</a> </li>
-      <li class="contact"><i class="fa fa-phone" aria-hidden="true"></i> +233 270 977 722</li>
+      <li class="contact"><a href="tel:+233270977722"><i class="fa fa-phone" aria-hidden="true"></i> +233 270 977 722</a></li>
+    </ul>
+  </nav>
+
+  <nav class="mb-menu {{showMbMenu}}">
+    <div (click)="hideMenu()" class="close-btn "><i class="fa fa-times" aria-hidden="true"></i></div>
+    <ul>
+      <li (click)="hideMenu()"><a href="#about">About</a> </li>
+      <li (click)="hideMenu()"><a href="#services">services</a> </li>
+      <li (click)="hideMenu()"><a href="#projects">projects</a> </li>
+      <li (click)="hideMenu()" class="contact"><a href="tel:+233270977722"><i class="fa fa-phone" aria-hidden="true"></i> +233 270 977 722</a></li>
     </ul>
   </nav>
 </div>
