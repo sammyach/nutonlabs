@@ -29,3 +29,45 @@
   display: inline;
   font-weight: 600;
 }
+
+.menu{
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline;
+  padding: .4rem;
+  line-height: 3;
+  margin: .4rem;
+  // color: red;
+}
+li:hover{
+  border-bottom: 2px red solid;
+}
+a{
+  text-decoration: none;
+  color: red;
+}
+
+.contact{
+  border: 2px red solid;
+}
+
+// .contact:hover a{
+//   background: red;
+// }
+
+.contact a:hover{
+  color: #FFF;
+  background: red;
+}
+// .contact a{
+//   color: #fff;
+// }
+
+
