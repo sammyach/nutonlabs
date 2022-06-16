@@ -1,9 +1,37 @@
 footer{
-  height: 80vh;
+  height: 90vh;
   background: red;
-  padding: 5rem 7rem;
+  // padding: 5rem 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.top, .mid, .bottom{
+  padding: 2rem 7rem;
   display: flex;
   justify-content: space-between;
+}
+
+.top{
+  background: #FCF7F7;
+  color: red;
+  // border-top: 2px red solid;
+}
+
+.top a{
+  text-decoration: none;
+  color: red;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem;
+  padding-bottom: .2rem;
+  border-bottom: 3px red dashed;
+}
+
+.bottom{
+  background: #333;
+  color: #FFF;
+  font-size: .9rem;
 }
 
 .brand-name{
@@ -48,17 +76,37 @@ li{
   padding: .5rem 0;
 }
 
-li:hover{
+li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+li a:hover{
   color: rgb(92, 5, 5);
-  cursor: pointer;
 }
 
 @media (max-width: 786px){
   footer{
     flex-direction: column;
-    padding: 2rem 1rem;
-    min-height: 100vh;
+    // padding: 2rem 1rem;
+    // min-height: 100vh;
     height: 100%;
+  }
+
+  .top, .mid, .bottom{
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+
+  .top div{
+    margin: .5rem;
+    text-align: center;
+  }
+
+  .top a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .2rem;
   }
 
   .ft-child{
