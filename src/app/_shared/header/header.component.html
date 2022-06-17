@@ -28,7 +28,7 @@
     <ul>
       <li (click)="hideMenu()"><a href="#about">why us</a> </li>
       <li (click)="hideMenu()"><a href="#services">services</a> </li>
-      <li (click)="hideMenu()"><a href="#products">products</a>
+      <li (click)="hideMenu()"><a [routerLink]="['/products']">products</a>
         <!-- <ul class="mb-products-menu">
           <li><a href="">mBanQ</a> </li>
           <li><a href="">E-levy Calculator</a> </li>
