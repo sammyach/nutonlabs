@@ -123,6 +123,51 @@
   color: #aaa;
 }
 
+.box{
+  background: red;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.box-child{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card{
+  color: red;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-logo, .product-title{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.product-title{
+  padding-top: 1rem;
+}
+
+.child-2, .child-4, .child-6{
+  background: #fff;
+}
+
 @media (max-width: 786px){
   .child{
     padding: 1rem;
@@ -302,5 +347,3 @@
   83% {background: #F44336;}
   100% {background: #F44336;}
 }
-
-
