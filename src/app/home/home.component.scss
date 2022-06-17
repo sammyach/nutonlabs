@@ -87,7 +87,14 @@
   margin: 1rem;
   padding-top: 2rem;
   border: 1px red solid;
+  color: red;
   // z-index: 100;
+}
+
+.services-card:hover{
+  background: red;
+  color: #fff;
+  cursor: pointer;
 }
 
 .services-card-head, .services-card-body{
@@ -100,11 +107,11 @@
 
 .fa{
   font-size: 4rem;
-  color: red;
+  // color: red;
 }
 
 .services-card-body-title{
-  color: red;
+  // color: red;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;

@@ -11,7 +11,14 @@
     <ul>
       <li><a href="#about">why us</a> </li>
       <li><a href="#services">services</a> </li>
-      <li><a href="#projects">projects</a> </li>
+      <li class="products"><a href="#projects">products</a> <i style="margin-left: .5rem ;" class="fa fa-caret-down" aria-hidden="true"></i>
+        <ul class="products-menu">
+          <li><a href="">mBanQ</a> </li>
+          <li><a href="">E-levy Calculator</a> </li>
+          <li><a href="">Nuton Shop</a> </li>
+        </ul>
+      </li>
+      <li><a href="#projects">blog</a> </li>
       <li class="contact"><a href="tel:+233270977722"><i class="fa fa-phone" aria-hidden="true"></i> +233 270 977 722</a></li>
     </ul>
   </nav>
@@ -21,7 +28,13 @@
     <ul>
       <li (click)="hideMenu()"><a href="#about">why us</a> </li>
       <li (click)="hideMenu()"><a href="#services">services</a> </li>
-      <li (click)="hideMenu()"><a href="#projects">projects</a> </li>
+      <li (click)="hideMenu()"><a href="#projects">products</a>
+        <!-- <ul class="mb-products-menu">
+          <li><a href="">mBanQ</a> </li>
+          <li><a href="">E-levy Calculator</a> </li>
+          <li><a href="">Nuton Shop</a> </li>
+        </ul> -->
+      </li>
       <li (click)="hideMenu()" class="contact"><a href="tel:+233270977722"><i class="fa fa-phone" aria-hidden="true"></i> +233 270 977 722</a></li>
     </ul>
   </nav>
