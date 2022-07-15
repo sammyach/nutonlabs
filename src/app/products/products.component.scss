@@ -37,6 +37,10 @@
   font-size: 3rem;
 }
 
+.product-logo img{
+  width: 200px;
+}
+
 .product-title{
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
@@ -47,9 +51,18 @@
   color: red;
 }
 
+a{
+  text-decoration: none;
+  color: red;
+}
+a:hover{
+  color: #fff;
+}
+
 .product-desc{
   color: #555;
   font-size: .8rem;
+  text-align: center;
 }
 
 .more{
@@ -64,6 +77,9 @@
   background: red;
   color: #fff;
   cursor: pointer;
+  a{
+    color: #fff;
+  }
 }
 
 @media (max-width: 786px){
