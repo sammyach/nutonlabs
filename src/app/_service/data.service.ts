@@ -8,22 +8,22 @@ import { environment } from 'src/environments/environment';
 })
 export class DataService {
 
-  private baseUrl = environment.apiUrl;
+  //private baseUrl = environment.apiUrl;
 
   private myData$ = new Subject<string>();
   constructor(private http: HttpClient) {
-    console.log('in dz conztructor');
-    console.log('doez myData$ haz obzerverz?: ', this.myData$.observed);
+    // console.log('in dz conztructor');
+    // console.log('doez myData$ haz obzerverz?: ', this.myData$.observed);
 
   }
 
-  getPost(slug: string){
-    return this.http.get<any>(`${this.baseUrl}/api/posts/find/${slug}`);
-  }
+  // getPost(slug: string){
+  //   return this.http.get<any>(`${this.baseUrl}/api/posts/find/${slug}`);
+  // }
 
   raiseMyDataEvent(val: string){
-    console.log('in raize my data event');
-    console.log('doez myData$ haz obzerverz?: ', this.myData$.observed);
+    // console.log('in raize my data event');
+    // console.log('doez myData$ haz obzerverz?: ', this.myData$.observed);
     this.myData$.next(val);
     // this.myData$.error(new Error("Failed to pazz more values"))
     // this.myData$.complete();
@@ -33,8 +33,8 @@ export class DataService {
   }
 
   getMyData(): Observable<string>{
-    console.log('in getMydata method');
-    console.log('doez myData$ haz obzerverz?: ', this.myData$.observed);
+    // console.log('in getMydata method');
+    // console.log('doez myData$ haz obzerverz?: ', this.myData$.observed);
     return this.myData$;
   }
 }

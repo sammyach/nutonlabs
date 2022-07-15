@@ -20,10 +20,10 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   getData(slug: any){
-    this.ds.getPost(slug).subscribe((res)=>{
-      console.log(res);
-      this.product = res;
-    })
+    // this.ds.getPost(slug).subscribe((res)=>{
+    //   console.log(res);
+    //   this.product = res;
+    // })
   }
 
 }
