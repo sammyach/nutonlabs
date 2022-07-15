@@ -98,8 +98,13 @@ li a:hover{
   }
 
   .top, .mid, .bottom{
-    padding: 2rem 1rem;
+    padding: 1rem;
     flex-direction: column;
+  }
+
+  .top{
+    justify-content: center;
+    align-items: center;
   }
 
   .top div{
@@ -108,7 +113,7 @@ li a:hover{
   }
 
   .top a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     padding: 0 .2rem;
     margin: 0;
