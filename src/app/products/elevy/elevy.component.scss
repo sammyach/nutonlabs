@@ -1,0 +1,117 @@
+.container{
+  min-height: 90vh;
+}
+
+.top{
+  background: red url(../../../assets/img/elevy-canvas-min.png) no-repeat fixed center center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.page-title{
+  color: red;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.mid{
+  padding: 1rem 7rem;
+}
+
+.content{
+  display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
+  color: #757575;
+  text-align: justify;
+}
+.content div{
+  padding: 2rem;
+  width: 50%;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid red;
+}
+
+.products{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card{
+  width: 350px;
+  // border: 1px #555 solid;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.product-logo{
+  font-size: 3rem;
+}
+
+.product-title{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-logo, .product-title{
+  text-align: center;
+  color: red;
+}
+
+.product-desc{
+  color: #555;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.more{
+  text-align: center;
+  margin-top: 2rem;
+  border: 2px red solid;
+  color: red;
+  padding: 1rem;
+}
+
+.more:hover{
+  background: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 786px){
+  .mid{
+    padding: 1rem;
+  }
+
+  .products{
+    flex-direction: column;
+  }
+
+  .product-card{
+    width: 100%;
+  }
+
+  .content{
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .content div{
+    padding: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+}
+
