@@ -11,14 +11,15 @@
     <ul>
       <li><a href="#about">why us</a> </li>
       <li><a href="#services">services</a> </li>
-      <li class="products"><a [routerLink]="['/products']">products</a> <i style="margin-left: .5rem ;" class="fa fa-caret-down" aria-hidden="true"></i>
-        <ul class="products-menu">
+      <li class="products"><a [routerLink]="['/products']">products</a>
+        <!-- <i style="margin-left: .5rem ;" class="fa fa-caret-down" aria-hidden="true"></i> -->
+        <!-- <ul class="products-menu">
           <li><a href="">mBanQ</a> </li>
           <li><a href="">E-levy Calculator</a> </li>
           <li><a href="">Nuton Shop</a> </li>
-        </ul>
+        </ul> -->
       </li>
-      <li><a href="#projects">blog</a> </li>
+      <li><a [routerLink]="['/blog']">blog</a> </li>
       <li class="contact"><a href="tel:+233270977722"><i class="fa fa-phone" aria-hidden="true"></i> +233 270 977 722</a></li>
     </ul>
   </nav>

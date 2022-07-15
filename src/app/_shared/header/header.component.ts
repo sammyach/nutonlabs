@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/_service/data.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   opened = false;
   showMenu: any;
   showMbMenu: any = 'hide';
-  constructor() { }
+  constructor(private dz: DataService) { }
 
   ngOnInit(): void {
   }
@@ -20,11 +21,14 @@ export class HeaderComponent implements OnInit {
     console.log('toggle...', this.opened);
 
     this.showMbMenu = 'show';
+    this.dz.raiseMyDataEvent(this.showMbMenu)
     // this.opened = !this.opened;
     // this.showMenu = this.opened ? 'show' : 'hide';
   }
 
   hideMenu(){
+    console.log('hidemenu...', this.opened);
     this.showMbMenu = 'hide';
+    this.dz.raiseMyDataEvent(this.showMbMenu)
   }
 }
