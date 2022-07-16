@@ -90,6 +90,31 @@ a{
   cursor: pointer;
 }
 
+.features{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.download{
+  margin-right: 50px;
+  margin-left: 50px;
+  // padding-left: 2rem;
+  // padding-right: 2rem;
+}
+
+// .features div{
+//   margin: 1rem;
+// }
+
+.features img{
+  width: 200px;
+}
+
 @media (max-width: 786px){
   .mid{
     padding: 1rem;
@@ -103,7 +128,7 @@ a{
     width: 100%;
   }
 
-  .content{
+  .content, .features, .download{
     flex-direction: column;
     margin-right: 0;
     margin-left: 0;
@@ -112,6 +137,23 @@ a{
     padding: 0;
     margin-bottom: 1.5rem;
     width: 100%;
+  }
+
+  .features{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .features div{
+    margin-bottom: 2rem;
+  }
+
+  .features img{
+    width: 100%;
+  }
+
+  a{
+    margin: 0;
   }
 }
 
