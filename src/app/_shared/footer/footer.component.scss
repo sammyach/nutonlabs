@@ -86,7 +86,8 @@ li a{
 }
 
 li a:hover{
-  color: rgb(92, 5, 5);
+  //color: rgb(92, 5, 5);
+  text-decoration: underline;
 }
 
 @media (max-width: 786px){
