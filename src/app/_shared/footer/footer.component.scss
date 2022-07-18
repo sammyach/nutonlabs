@@ -36,7 +36,29 @@ footer{
   background: #333;
   color: #FFF;
   font-size: .9rem;
+  position: relative;
 }
+
+// .bottom-text{
+//   position: absolute;
+//   right: 40%;
+//   transition: right 1s linear;
+// }
+
+// .bottom:hover .bottom-text{
+//   transform: translateY(0);
+//   opacity: 1;
+//   // right: 66%;
+// }
+
+// .reveal{
+//   position: relative;
+//   transform: translateY(30px);
+//   opacity: 0;
+//   transition: 1s all ease;
+// }
+
+
 
 .brand-name{
   display: flex;

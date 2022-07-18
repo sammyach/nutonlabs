@@ -60,9 +60,26 @@
   color: red;
   width: 30%;
   margin-right: 5rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s all ease;
   // animation-name: title-animation;
   // animation-duration: 4s;
 }
+
+.child .reveal{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// .child:hover{
+//   .reveal{
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+
 
 @keyframes title-animation {
   from{color: red;}
@@ -180,7 +197,14 @@
 }
 
 .child-2, .child-4, .child-6{
+  opacity: 0;
   background: #fff;
+  animation: slideUp 1s linear 1s forwards;
+}
+.child-1, .child-3, .child-5{
+  opacity: 0;
+  // background: #fff;
+  animation: slideUp 1s linear 2s forwards;
 }
 
 @media (max-width: 786px){
@@ -199,6 +223,8 @@
     font-size: 1.5rem;
     width: 100%;
     text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
   }
 
   .child .content{
@@ -246,11 +272,25 @@
   .dropping-texts div:nth-child(4){
     margin-left: -50px !important;
   }
+
 }
 
 .constant-text{
+  position: relative;
   padding-right: 1rem;
   text-shadow: 0 2px 5px white;
+  animation: slideUp 1s linear ;
+}
+
+@keyframes slideUp{
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dropping-texts {
@@ -367,19 +407,6 @@
   }
 }
 
-// @keyframes bg {
-//   0% {background: #ff0075;}
-//   3% {background: #0094ff;}
-//   20% {background: #0094ff;}
-//   23% {background: #b200ff;}
-//   40% {background: #b200ff;}
-//   43% {background: #8BC34A;}
-//   60% {background: #8BC34A;}
-//   63% {background: #F44336;}
-//   80% {background: #F44336;}
-//   83% {background: #F44336;}
-//   100% {background: #F44336;}
-// }
 
 
 

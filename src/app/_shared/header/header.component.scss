@@ -14,6 +14,8 @@
 
 .brand-name{
   display: flex;
+  animation: fadeIn 1s linear 0.2s forwards;
+  opacity: 0;
 }
 
 .bg-title{
@@ -21,6 +23,16 @@
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .sm-title{
@@ -28,6 +40,22 @@
   font-size: .8rem;
   display: inline;
   font-weight: 600;
+  animation: slideInLeft 1.5s linear forwards
+}
+
+@keyframes slideInLeft {
+  0%{
+    margin-left: 5rem;
+  }
+  25%{
+    margin-left: 2rem;
+  }
+  50%{
+    margin-left: 1rem;
+  }
+  100%{
+    margin-left: 0;
+  }
 }
 
 .menu{
@@ -39,11 +67,31 @@ ul{
   list-style: none;
 }
 
+ul li:nth-child(1){
+  animation: fadeIn 1s linear 0s forwards ;
+}
+
+ul li:nth-child(2){
+  animation: fadeIn 1s linear 0.5s forwards ;
+}
+
+ul li:nth-child(3){
+  animation: fadeIn 1s linear 1s forwards ;
+}
+
+ul li:nth-child(4){
+  animation: fadeIn 1s linear 1.5s forwards ;
+}
+ul li:nth-child(5){
+  animation: fadeIn 1s linear 2s forwards ;
+}
+
 li{
   display: inline;
   padding: .4rem;
   line-height: 3;
   margin: .4rem;
+  opacity: 0;
   // color: red;
 }
 li:hover{
