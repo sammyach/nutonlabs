@@ -10,42 +10,22 @@
 .child{
   padding: 1rem 7rem;
   scroll-snap-align: start;
-  // background:red;
   height:100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 100%;
 }
-
-// .child h1{
-//   text-align: center;
-//   text-transform: uppercase;
-//   font-size: 3rem;
-
-// }
-
-
 
 .red{
   background: red url(../../assets/img/bg2.min.jpg) center center no-repeat fixed; //red url(../../assets/img/bg2.jpg) no-repeat fixed center;
   opacity: 0.8;
   color: red;
-
-  // background-color: red;
-  // background-image: url(../../assets/img/bg2.jpg);
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
   background-size: cover;
   overflow:hidden;
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
-  // animation: bg 7s linear infinite;
-  // animation: 7s linear infinite;
-
 }
 
 .yellow{
@@ -63,27 +43,11 @@
   opacity: 0;
   transform: translateY(50px);
   transition: 1s all ease;
-  // animation-name: title-animation;
-  // animation-duration: 4s;
 }
 
 .child .reveal{
   transform: translateY(0);
   opacity: 1;
-}
-
-// .child:hover{
-//   .reveal{
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
-// }
-
-
-
-@keyframes title-animation {
-  from{color: red;}
-  to{color: blue;}
 }
 
 .child .content{
@@ -132,11 +96,9 @@
 
 .fa{
   font-size: 4rem;
-  // color: red;
 }
 
 .services-card-body-title{
-  // color: red;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -187,9 +149,7 @@
 
 .product-logo img{
   width: 100%;
-  // border: 1px solid #aaa;
   height: 100%;
-  // border-radius: 50px;
 }
 
 .product-title{
@@ -203,7 +163,6 @@
 }
 .child-1, .child-3, .child-5{
   opacity: 0;
-  // background: #fff;
   animation: slideUp 1s linear 2s forwards;
 }
 
@@ -251,12 +210,6 @@
 
   .services-card-body-msg{
     font-size: .7rem;
-  }
-
-
-  .child h1 span {
-    // font-size: 20px;
-    // margin-left: 100px;
   }
 
   .dropping-texts {
