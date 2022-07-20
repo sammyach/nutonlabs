@@ -12,6 +12,8 @@ import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { ElevyComponent } from './products/elevy/elevy.component';
+import { DataEntryProcessingComponent } from './services/data-entry-processing/data-entry-processing.component';
+import { WebDevelopmentComponent } from './services/web-development/web-development.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ElevyComponent } from './products/elevy/elevy.component';
     ServicesComponent,
     BlogComponent,
     ProductDetailsComponent,
-    ElevyComponent
+    ElevyComponent,
+    DataEntryProcessingComponent,
+    WebDevelopmentComponent
   ],
   imports: [
     BrowserModule,
