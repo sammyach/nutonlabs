@@ -94,6 +94,10 @@ li{
   opacity: 0;
   // color: red;
 }
+
+li:last-child{
+  margin-right: 0;
+}
 li:hover{
   border-bottom: 2px red solid;
 }
@@ -104,16 +108,20 @@ a{
 
 .contact{
   border: 2px red solid;
+  border-radius: 25px;
 }
 
-// .contact:hover a{
+.contact:hover{
+  background: red;
+  a{
+    color: #fff;
+  }
+}
+
+// .contact a:hover{
+//   color: #FFF;
 //   background: red;
 // }
-
-.contact a:hover{
-  color: #FFF;
-  background: red;
-}
 // .contact a{
 //   color: #fff;
 // }
