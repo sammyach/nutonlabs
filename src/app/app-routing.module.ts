@@ -11,7 +11,7 @@ import { WebDevelopmentComponent } from './services/web-development/web-developm
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'services/data-entry-processing', component: DataEntryProcessingComponent},
-  {path: 'services/web-development', component: WebDevelopmentComponent},
+  {path: 'services/website-and-seo', component: WebDevelopmentComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'products/e-levy-calculator', component: ElevyComponent},
   {path: 'products/:slug', component: ProductDetailsComponent},
