@@ -1,8 +1,4 @@
 .container{
-  // padding: 1rem 7rem;
-
-  // scroll-snap-type: y mandatory;
-  scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
@@ -18,7 +14,7 @@
 }
 
 .red{
-  background: red url(../../assets/img/bg2.min.jpg) center center no-repeat fixed; //red url(../../assets/img/bg2.jpg) no-repeat fixed center;
+  background: red url(../../assets/img/bg2.min.jpg) center center no-repeat fixed;
   opacity: 0.6;
   color: red;
   background-size: cover;
@@ -31,23 +27,18 @@
 
 @keyframes bg-img-mixer{
   from{
-    background: red url(../../assets/img/bg2.min.jpg) center center no-repeat fixed; //red url(../../assets/img/bg2.jpg) no-repeat fixed center;
-
+    background: red url(../../assets/img/bg2.min.jpg) center center no-repeat fixed;
   }
 
   to{
-    background: red url(../../assets/img/productz-bg.min.jpg) center center no-repeat fixed; //red url(../../assets/img/bg2.jpg) no-repeat fixed center;
-
+    background: red url(../../assets/img/productz-bg.min.jpg) center center no-repeat fixed;
   }
 }
 
-.yellow{
+.white{
   background: #fff;
 }
 
-.blue{
-  background: blue;
-}
 .child .title{
   font-size: 3rem;
   color: red;
@@ -103,7 +94,6 @@ a{
   padding-top: 2rem;
   border: 1px #757575 solid;
   color: #bbb;
-  // z-index: 100;
 }
 
 .services-card:hover{
@@ -133,7 +123,6 @@ a{
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  // color: #757575;
 }
 
 .services-card-body-msg{
@@ -247,7 +236,6 @@ a{
   .dropping-texts {
     width: 200px !important;
     text-align: center !important;
-    // height: 48px;
   }
 
   .dropping-texts div:nth-child(1){
@@ -286,12 +274,11 @@ a{
   vertical-align: -2px;
   font-family: Tahoma;
   color: #FFF;
-
 }
 
 .dropping-texts > div {
-  font-size:0px;
-  opacity:0;
+  font-size: 0px;
+  opacity: 0;
   margin-left:-30px;
   position:absolute;
   font-weight:700;
@@ -391,10 +378,3 @@ a{
     transform: rotate(15deg);
   }
 }
-
-
-
-
-
-
-

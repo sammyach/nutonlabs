@@ -14,6 +14,7 @@ import { ProductDetailsComponent } from './products/product-details/product-deta
 import { ElevyComponent } from './products/elevy/elevy.component';
 import { DataEntryProcessingComponent } from './services/data-entry-processing/data-entry-processing.component';
 import { WebDevelopmentComponent } from './services/web-development/web-development.component';
+import { SoftwareDevelopmentComponent } from './services/software-development/software-development.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { WebDevelopmentComponent } from './services/web-development/web-developm
     ProductDetailsComponent,
     ElevyComponent,
     DataEntryProcessingComponent,
-    WebDevelopmentComponent
+    WebDevelopmentComponent,
+    SoftwareDevelopmentComponent
   ],
   imports: [
     BrowserModule,

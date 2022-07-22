@@ -33,10 +33,22 @@
 
 h3{
   text-align: left;
+  font-weight: 400;
+  color: red;
 }
 
 ul{
-  padding-left: 2rem;
+  // padding-left: 2rem;
+  list-style: none;
+}
+
+li{
+  margin: 1rem 0;
+}
+
+ul .fa{
+  color: red;
+  padding-right: .5rem;
 }
 
 @media (max-width: 786px){
